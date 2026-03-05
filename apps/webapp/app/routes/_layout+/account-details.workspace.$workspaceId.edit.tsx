@@ -333,6 +333,7 @@ export async function action({ context, request, params }: ActionFunctionArgs) {
         const {
           selfServiceCanSeeCustody,
           selfServiceCanSeeBookings,
+          selfServiceCanUseAdvancedFiltering,
           baseUserCanSeeCustody,
           baseUserCanSeeBookings,
         } = parsedData;
@@ -342,6 +343,7 @@ export async function action({ context, request, params }: ActionFunctionArgs) {
           configuration: {
             selfServiceCanSeeCustody,
             selfServiceCanSeeBookings,
+            selfServiceCanUseAdvancedFiltering,
             baseUserCanSeeCustody,
             baseUserCanSeeBookings,
           },
